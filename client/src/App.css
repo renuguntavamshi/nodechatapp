@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+.joinchatcontainer{
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border:2px solid rgb(105, 64, 11);
+  padding: 15px;
+  border-radius: 14px;
+}
+.chat{
+  top:25vh;
+  background-color: rgb(211, 202, 202);
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width:300px;
+  height: 390px;
+  
+  box-sizing: border-box;
+}
+.chatheader{
+  background-color: rgb(105, 64, 11);
+  color: wheat;
+  border:2px solid rebeccapurple
+}
+.chatbody{
+ overflow-y: scroll;
+  background-color: beige;
+  height: 76%;
+  box-sizing: border-box;
+}
+.chatfooter{
+  background-color: rgb(22, 18, 13);
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.chatfooter input{
+  width: 80%;
+}
+.chatfooter button{
+  width: 17.2%;
+}
+.message{
+  display: flex;
+}
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+  background-color: red;
+ 
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+ 
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
